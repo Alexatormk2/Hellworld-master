@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [{
+    "rolls":1,
+    "entries": [
+      {
+       "count": 1,
+        "type": "minecraft:item",
+        "name": "hellworld:sakura_sapling"
+      },
+      {"count": 1,
+        "type": "minecraft:item",
+        "name": "hellworld:sakura_sapling"
+      }
+
+    ]
+  }
+
+  ]
+}

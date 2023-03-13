@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sakura",
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "#": {
+      "item": "hellworld:sakurita"
+    }
+  },
+  "pattern": [
+
+    "##",
+    "aa",
+    "aa"
+  ],
+  "result": {
+    "count": 4,
+    "item": "hellworld:healing_block"
+  }
+}

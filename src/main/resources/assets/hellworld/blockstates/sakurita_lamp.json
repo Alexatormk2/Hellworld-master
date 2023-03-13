@@ -1,0 +1,9 @@
+{
+
+  "variants":{
+    "lit=true": {"model": "hellworld:block/sakurita_lamp_on"},
+    "lit=false": {"model": "hellworld:block/sakurita_lamp_of"}
+
+  }
+
+}

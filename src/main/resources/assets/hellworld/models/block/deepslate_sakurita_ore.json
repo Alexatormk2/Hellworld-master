@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures":{
+    "all": "hellworld:block/deepslate_sakurita_ore"
+  }
+
+}

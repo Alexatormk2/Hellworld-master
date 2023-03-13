@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "hellworld:block/sakura_log_top",
+    "side": "hellworld:block/sakura_log"
+  }
+  }
+
+
+}

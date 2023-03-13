@@ -1,0 +1,24 @@
+{
+"item.hellworld.sakurita": "Sakurita",
+"item.hellworld.sakura_flower": "Sakura flower",
+"item.hellworld.bandage": "Bandage",
+"item.hellworld.rice": "Rice",
+"item.hellworld.rice_seed": "Rice seed",
+"item.hellworld.icon": "Icon",
+  "block.hellworld.sakura_planks":"Sakura planks",
+  "block.hellworld.rice_crop":"Rice crop",
+  "block.hellworld.healing_block":"Healing block",
+  "block.hellworld.sakurita_lamp":"Sakurita lamp",
+  "block.hellworld.sakura_flower":"Sakura flower",
+  "block.hellworld.sakura_log":"Sakura log",
+  "block.hellworld.sakura_leaves":"Sakura leaves",
+  "block.hellworld.sakura_sapling":"Sakura sapling",
+  "block.hellworld.sakurita_ore":"Sakurita ore",
+  "block.hellworld.nether_sakurita_ore":"Nether sakurita ore",
+  "block.hellworld.end_sakurita_ore":"End sakurita ore",
+  "block.hellworld.deepslate_sakurita_ore":"deepslate sakurita ore",
+"itemGroup.hellworld_items": "Hellworld:Items",
+
+"itemGroup.hellworld_blocks": "Hellworld:Blocks"
+
+}

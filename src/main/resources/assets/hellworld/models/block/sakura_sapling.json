@@ -1,0 +1,8 @@
+{
+
+  "parent": ":block/crop",
+  "render_type": "cutout",
+  "textures": {
+    "crop": "hellworld:block/sakura_sapling"
+  }
+}

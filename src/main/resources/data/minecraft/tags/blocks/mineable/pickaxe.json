@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "hellworld:healing_block",
+    "hellworld:sakurita_block",
+    "hellworld:sakurita_ore",
+    "hellworld:nether_sakurita_ore",
+    "hellworld:end_sakurita_ore",
+    "hellworld:deepslate_sakurita_ore"
+  ]
+}
