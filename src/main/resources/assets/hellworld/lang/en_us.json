@@ -5,6 +5,8 @@
 "item.hellworld.rice": "Rice",
 "item.hellworld.rice_seed": "Rice seed",
 "item.hellworld.icon": "Icon",
+  "item.hellworld.sakurita_katana": "Sakurita katana",
+  "item.hellworld.sakurita_pickaxe": "Sakurita pickaxe",
   "block.hellworld.sakura_planks":"Sakura planks",
   "block.hellworld.rice_crop":"Rice crop",
   "block.hellworld.healing_block":"Healing block",
@@ -19,6 +21,7 @@
   "block.hellworld.deepslate_sakurita_ore":"deepslate sakurita ore",
 "itemGroup.hellworld_items": "Hellworld:Items",
 
-"itemGroup.hellworld_blocks": "Hellworld:Blocks"
-
+"itemGroup.hellworld_blocks": "Hellworld:Blocks",
+  "itemGroup.hellworld_tools": "Hellworld:Tools",
+  "itemGroup.hellworld_weapons": "Hellworld:Weapons"
 }

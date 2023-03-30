@@ -16,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Hellworld.MOD_ID)
 public class Hellworld
@@ -36,6 +37,8 @@ public class Hellworld
 
 
         MinecraftForge.EVENT_BUS.register(this);
+
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
