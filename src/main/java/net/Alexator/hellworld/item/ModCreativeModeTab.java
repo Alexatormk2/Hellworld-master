@@ -24,6 +24,13 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SAKURITA_PICKAXE.get());
         }
     };
+
+    public static final CreativeModeTab HELLWORD_TAB_ARMORS = new CreativeModeTab("hellworld_armors") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.SAKURITA_HELMET.get());
+        }
+    };
     public static final CreativeModeTab HELLWORD_TAB_WEAPONS = new CreativeModeTab("hellworld_weapons") {
         @Override
         public ItemStack makeIcon() {

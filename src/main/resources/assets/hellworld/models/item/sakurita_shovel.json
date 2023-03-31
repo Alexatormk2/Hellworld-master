@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures":{
-    "layer0": "hellworld:item/sakurita_pickaxe"
+    "layer0": "hellworld:item/sakurita_shovel"
   }
 
 
