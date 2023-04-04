@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "sakura",
   "key": {
-
-    "a": {
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "#": {
       "item": "hellworld:sakurita"
     }
   },
   "pattern": [
-
-    "aaa",
-    "aaa",
-    "aaa"
+    "###",
+    "X X",
+    "# #"
   ],
   "result": {
-    "count": 1,
-    "item": "hellworld:sakurita_block"
+    "item": "hellworld:sakurita_leggings"
   }
 }

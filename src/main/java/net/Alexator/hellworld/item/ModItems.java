@@ -72,7 +72,7 @@ public class ModItems {
         public static final ArmorMaterial SAKURITA = new HellwordArmorMaterial(
                 "sakurita",
                 500,
-                new int[] { 20, 40, 50, 10 },
+                new int[] { 8, 12, 10, 4 },
                 300,
                 SoundEvents.ARMOR_EQUIP_DIAMOND,
                 0.0f,

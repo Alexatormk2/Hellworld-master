@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "hellworld:sakurita"
+    }
+  },
+  "pattern": [
+    "XA",
+    "A#",
+    " #"
+  ],
+  "result": {
+    "item": "hellworld:sakurita_axe"
+  }
+}
