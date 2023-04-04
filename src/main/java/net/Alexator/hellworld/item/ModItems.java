@@ -23,15 +23,15 @@ public class ModItems {
 
     //armor
     public static final RegistryObject<ArmorItem> SAKURITA_HELMET = ITEMS.register("sakurita_helmet",
-            ()-> new ArmorItem(null, EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
-    public static final RegistryObject<ArmorItem> SAKURITA_CHESTPLATE = ITEMS.register("sakurita_chesplate",
-            ()-> new ArmorItem(null, EquipmentSlot.CHEST,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
+            ()-> new ArmorItem(ArmorTiers.SAKURITA, EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
+    public static final RegistryObject<ArmorItem> SAKURITA_CHESTPLATE = ITEMS.register("sakurita_chestplate",
+            ()-> new ArmorItem(ArmorTiers.SAKURITA, EquipmentSlot.CHEST,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
 
     public static final RegistryObject<ArmorItem> SAKURITA_LEGGINGS = ITEMS.register("sakurita_leggings",
-            ()-> new ArmorItem(null, EquipmentSlot.LEGS,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
+            ()-> new ArmorItem(ArmorTiers.SAKURITA, EquipmentSlot.LEGS,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
 
     public static final RegistryObject<ArmorItem> SAKURITA_BOOTS = ITEMS.register("sakurita_boots",
-            ()-> new ArmorItem(null, EquipmentSlot.FEET,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
+            ()-> new ArmorItem(ArmorTiers.SAKURITA, EquipmentSlot.FEET,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ARMORS)));
 
     //tools
 

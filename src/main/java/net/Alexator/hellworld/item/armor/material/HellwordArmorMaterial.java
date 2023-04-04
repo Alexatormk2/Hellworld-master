@@ -44,11 +44,11 @@ private static  int[] DURABILITY_SLOT = new int[]{20,30,35,18};
 
     @Override
     public float getToughness() {
-        return this.getToughness();
+        return this.toughness;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return this.getKnockbackResistance();
+        return this.knockbackResist;
     }
 }
