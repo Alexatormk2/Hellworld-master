@@ -36,20 +36,20 @@ public class ModItems {
     //tools
 
     public static final RegistryObject<AxeItem> SAKURITA_AXE = ITEMS.register("sakurita_axe",
-            ()-> new AxeItem(ToolTiers.SAKURITA,8,2f,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS)));
+            ()-> new AxeItem(ToolTiers.SAKURITA,8,5f,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS)));
     public static final RegistryObject<ShovelItem> SAKURITA_SHOVEL = ITEMS.register("sakurita_shovel",
-            ()-> new ShovelItem(ToolTiers.SAKURITA,3,2.5f,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_TOOLS)));
+            ()-> new ShovelItem(ToolTiers.SAKURITA,3,5.5f,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_TOOLS)));
     public static  final  RegistryObject<HoeItem> SKAURITA_HOE =ITEMS.register("sakurita_hoe",
-            () -> new HoeItem(ToolTiers.SAKURITA,3,2.5f,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_TOOLS)));
+            () -> new HoeItem(ToolTiers.SAKURITA,3,5.5f,new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_TOOLS)));
     public static final RegistryObject<PickaxeItem> SAKURITA_PICKAXE = ITEMS.register("sakurita_pickaxe",
-            () -> new PickaxeItem(ToolTiers.SAKURITA, 3, 2.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_TOOLS)));
+            () -> new PickaxeItem(ToolTiers.SAKURITA, 3, 5.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_TOOLS)));
     //weapons
     public static final RegistryObject<SwordItem> SAKURITA_KATANA = ITEMS.register("sakurita_katana",
-            () -> new SwordItem(ToolTiers.SAKURITA, 5, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
+            () -> new SwordItem(ToolTiers.SAKURITA, 2, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
     //items
     public static final RegistryObject<Item> SAKURITA = ITEMS.register("sakurita", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
     public static final RegistryObject<Item> RICE = ITEMS.register("rice", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).food(new FoodProperties.Builder().nutrition(1).saturationMod(1).build())));
-    public static final RegistryObject<Item> BANDAGE = ITEMS.register("bandage", () -> new BandageItem(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(12).durability(3).setNoRepair()));
+    public static final RegistryObject<Item> BANDAGE = ITEMS.register("bandage", () -> new BandageItem(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(12).durability(2).setNoRepair()));
     public static final RegistryObject<Item> RICE_SEED = ITEMS.register("rice_seed", () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(64)));
     public static final RegistryObject<Item> ICON = ITEMS.register("icon", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
 
@@ -60,7 +60,7 @@ public class ModItems {
     public static class ToolTiers {
         public static final Tier SAKURITA = new ForgeTier(
                 2,
-                800,
+                2300,
                 1.5f,
                 3,
                 350,
