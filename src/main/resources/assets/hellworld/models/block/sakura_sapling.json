@@ -1,7 +1,7 @@
 {
-  "parent": ":block/cross",
-  "render_type": "cutout",
+  "parent": "minecraft:block/cross",
   "textures": {
     "cross": "hellworld:block/sakura_sapling"
-  }
+  },
+  "render_type": "cutout"
 }

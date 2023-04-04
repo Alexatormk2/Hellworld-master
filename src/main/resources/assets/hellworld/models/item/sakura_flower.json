@@ -1,6 +1,6 @@
 {
-  "parent": ":block/cross",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "cross": "hellworld:block/sakura_flower"
+    "layer0": "hellworld:block/sakura_flower"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hellworld:block/stripped_sakura_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hellworld:block/stripped_sakura_wood"
+    },
+    "axis=z": {
+      "model": "hellworld:block/stripped_sakura_wood_horizontal",
+      "x": 90
+    }
+  }
+}

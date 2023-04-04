@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hellworld:block/stripped_sakura_log_top",
+    "side": "hellworld:block/stripped_sakura_log"
+  }}
