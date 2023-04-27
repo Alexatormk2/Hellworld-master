@@ -2,10 +2,14 @@ package net.Alexator.hellworld;
 
 import com.mojang.logging.LogUtils;
 import net.Alexator.hellworld.block.ModBlocks;
+import net.Alexator.hellworld.entity.ModEntityTypes;
+import net.Alexator.hellworld.entity.client.DummyRenderer;
+import net.Alexator.hellworld.entity.client.LilServantRenderer;
 import net.Alexator.hellworld.item.ModItems;
 import net.Alexator.hellworld.world.feature.ModConfiguredFeatures;
 import net.Alexator.hellworld.world.feature.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -33,9 +38,10 @@ public class Hellworld {
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
-
+        ModEntityTypes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
+        GeckoLib.initialize();
 
 
     }
@@ -53,7 +59,8 @@ public class Hellworld {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-
+            EntityRenderers.register(ModEntityTypes.DUMMY.get(), DummyRenderer::new);
+                EntityRenderers.register(ModEntityTypes.LILSERVANT_LILY.get(), LilServantRenderer::new);
         }
     }
 }

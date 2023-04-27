@@ -37,4 +37,12 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.SAKURITA_KATANA.get());
         }
     };
+
+
+    public static final CreativeModeTab HELLWORD_TAB_ENTITYS = new CreativeModeTab("hellworld_entitys") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.DUMMY_SPAWN_EGG.get());
+        }
+    };
 }
