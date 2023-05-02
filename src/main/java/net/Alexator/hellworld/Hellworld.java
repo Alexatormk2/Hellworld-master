@@ -5,6 +5,7 @@ import net.Alexator.hellworld.block.ModBlocks;
 import net.Alexator.hellworld.entity.ModEntityTypes;
 import net.Alexator.hellworld.entity.client.DummyRenderer;
 import net.Alexator.hellworld.entity.client.LilServantRenderer;
+import net.Alexator.hellworld.entity.client.NanaRenderer;
 import net.Alexator.hellworld.item.ModItems;
 import net.Alexator.hellworld.world.feature.ModConfiguredFeatures;
 import net.Alexator.hellworld.world.feature.ModPlacedFeatures;
@@ -61,6 +62,8 @@ public class Hellworld {
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
             EntityRenderers.register(ModEntityTypes.DUMMY.get(), DummyRenderer::new);
                 EntityRenderers.register(ModEntityTypes.LILSERVANT_LILY.get(), LilServantRenderer::new);
+                EntityRenderers.register(ModEntityTypes.SERVANT_NANA.get(), NanaRenderer::new);
+
         }
     }
 }

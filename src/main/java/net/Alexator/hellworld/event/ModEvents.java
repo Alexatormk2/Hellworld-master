@@ -4,6 +4,7 @@ import net.Alexator.hellworld.Hellworld;
 import net.Alexator.hellworld.entity.ModEntityTypes;
 import net.Alexator.hellworld.entity.custom.DummyEntity;
 import net.Alexator.hellworld.entity.custom.LilServantEntity;
+import net.Alexator.hellworld.entity.custom.NanaEntity;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -20,6 +21,7 @@ public class ModEvents {
         public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
             event.put(ModEntityTypes.DUMMY.get(), DummyEntity.setAttributes());
             event.put(ModEntityTypes.LILSERVANT_LILY.get(), LilServantEntity.setAttributes());
+            event.put(ModEntityTypes.SERVANT_NANA.get(), NanaEntity.setAttributes());
     }
 
 }}

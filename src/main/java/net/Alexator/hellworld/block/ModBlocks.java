@@ -113,7 +113,7 @@ public class ModBlocks {
                     return 60;
                 }
             }, ModCreativeModeTab.HELLWORD_TAB_BLOCK);
-    public static final RegistryObject<Block> SAKURA_SAPPLING = registerBlock("sakura_sappling",
+    public static final RegistryObject<Block> SAKURA_SAPPLING = registerBlock("sakura_sapling",
             () -> new SaplingBlock(new SakuraTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.HELLWORD_TAB_BLOCK);
 
     //flores

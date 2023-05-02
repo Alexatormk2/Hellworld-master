@@ -61,6 +61,8 @@ public class ModItems {
     public static final RegistryObject<Item> LILY_SPAWN_EGG = ITEMS.register("lily_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.LILSERVANT_LILY, 0xbf1111, 0x38761d, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
+    public static final RegistryObject<Item> NANA_SPAWN_EGG = ITEMS.register("nana_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_NANA, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static void register(IEventBus eventBus) {
 
