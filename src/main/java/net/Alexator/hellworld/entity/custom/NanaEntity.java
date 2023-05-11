@@ -107,8 +107,8 @@ public class NanaEntity extends Animal implements IAnimatable {
         return Monster.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 100.0D)
                 .add(Attributes.ATTACK_DAMAGE, 8.0f)
-                .add(Attributes.ATTACK_SPEED, 1.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.4f).build();
+                .add(Attributes.ATTACK_SPEED, 3.0f)
+                .add(Attributes.MOVEMENT_SPEED, 0.2f).build();
     }
     @Override
     public void registerControllers(AnimationData data) {
