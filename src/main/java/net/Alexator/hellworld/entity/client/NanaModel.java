@@ -1,8 +1,7 @@
 package net.Alexator.hellworld.entity.client;
 
 import net.Alexator.hellworld.Hellworld;
-import net.Alexator.hellworld.entity.custom.LilServantEntity;
-import net.Alexator.hellworld.entity.custom.NanaEntity;
+import net.Alexator.hellworld.entity.robots.NanaEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

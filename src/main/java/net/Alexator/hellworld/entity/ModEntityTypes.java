@@ -3,7 +3,7 @@ package net.Alexator.hellworld.entity;
 import net.Alexator.hellworld.Hellworld;
 import net.Alexator.hellworld.entity.custom.DummyEntity;
 import net.Alexator.hellworld.entity.custom.LilServantEntity;
-import net.Alexator.hellworld.entity.custom.NanaEntity;
+import net.Alexator.hellworld.entity.robots.NanaEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
