@@ -1,6 +1,7 @@
 package net.Alexator.hellworld.entity;
 
 public enum ActionType {
+
     // @formatter:off
     SIT,
     WAIT,
@@ -20,4 +21,6 @@ public enum ActionType {
             return ActionType.UNKNOWN;
         }
     }
+
+
 }
