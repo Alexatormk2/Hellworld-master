@@ -1,0 +1,9 @@
+{
+  "parent": "item/generated",
+  "textures":{
+    "layer0": "hellworld:item/deployer",
+    "layer1": "hellworld:item/deployer_overlay"
+  }
+
+
+}

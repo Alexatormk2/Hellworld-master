@@ -108,8 +108,8 @@ public class NanaEntity extends TamableAnimal implements IAnimatable {
         //this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Zombie.class, true));
         this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
-     //   this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
-      //  this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
+     this.targetSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
+       this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
       //  this.targetSelector.addGoal(3, (new HurtByTargetGoal(this)).setAlertOthers());
 
       //  this.targetSelector.addGoal(5, new NonTameRandomTargetGoal<>(this, Animal.class, false, PREY_SELECTOR));
@@ -122,7 +122,7 @@ public class NanaEntity extends TamableAnimal implements IAnimatable {
                 .add(Attributes.MAX_HEALTH, 100.0D)
                 .add(Attributes.ATTACK_DAMAGE, 8.0f)
                 .add(Attributes.ATTACK_SPEED, 1.9f)
-                .add(Attributes.MOVEMENT_SPEED, 0.8f).build();
+                .add(Attributes.MOVEMENT_SPEED, 0.7f).build();
     }
 
 
@@ -186,11 +186,11 @@ public class NanaEntity extends TamableAnimal implements IAnimatable {
         if (tamed) {
             getAttribute(Attributes.MAX_HEALTH).setBaseValue(260.0D);
             getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(9D);
-            getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((double)0.5f);
+            getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((double)0.3f);
         } else {
             getAttribute(Attributes.MAX_HEALTH).setBaseValue(130.0D);
             getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(8D);
-            getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((double)0.6f);
+            getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue((double)0.3f);
         }
     }
 

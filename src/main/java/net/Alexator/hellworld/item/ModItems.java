@@ -48,12 +48,45 @@ public class ModItems {
     //weapons
     public static final RegistryObject<SwordItem> SAKURITA_KATANA = ITEMS.register("sakurita_katana",
             () -> new SwordItem(ToolTiers.SAKURITA, 2, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
+
+    public static final RegistryObject<SwordItem> NANA_KATANA_WEAPON = ITEMS.register("nanakatanaweapon",
+            () -> new SwordItem(ToolTiers.SAKURITA, 4, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
+
+
     //items
-    public static final RegistryObject<Item> SAKURITA = ITEMS.register("sakurita", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
-    public static final RegistryObject<Item> RICE = ITEMS.register("rice", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).food(new FoodProperties.Builder().nutrition(1).saturationMod(1).build())));
-    public static final RegistryObject<Item> BANDAGE = ITEMS.register("bandage", () -> new BandageItem(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(12).durability(2).setNoRepair()));
-    public static final RegistryObject<Item> RICE_SEED = ITEMS.register("rice_seed", () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(64)));
-    public static final RegistryObject<Item> ICON = ITEMS.register("icon", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> SAKURITA = ITEMS.register("sakurita",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).food(new FoodProperties.Builder().nutrition(1).saturationMod(1).build())));
+    public static final RegistryObject<Item> BANDAGE = ITEMS.register("bandage",
+            () -> new BandageItem(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(12).durability(2).setNoRepair()));
+    public static final RegistryObject<Item> RICE_SEED = ITEMS.register("rice_seed",
+            () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(64)));
+    public static final RegistryObject<Item> ICON = ITEMS.register("icon",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    //bots parts
+    public static final RegistryObject<Item> NANA_HEAD = ITEMS.register("nanahead",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+    public static final RegistryObject<Item> NANA_ARMR = ITEMS.register("nanaarmr",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> NANA_ARML = ITEMS.register("nanaarml",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+    public static final RegistryObject<Item> NANA_BODY = ITEMS.register("nanabody",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+    public static final RegistryObject<Item> NANA_PELVIS = ITEMS.register("nanapelvis",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+    public static final RegistryObject<Item> NANA_LEG = ITEMS.register("nanaleg",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+    public static final RegistryObject<Item> NANA_KATANA = ITEMS.register("nanakatana",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+
+
     //spaw eggs
     public static final RegistryObject<Item> DUMMY_SPAWN_EGG = ITEMS.register("dummy_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.DUMMY, 0xf2c12b, 0x000000, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
@@ -62,6 +95,8 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.LILSERVANT_LILY, 0xbf1111, 0x38761d, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static final RegistryObject<Item> NANA_SPAWN_EGG = ITEMS.register("nana_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_NANA, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
+    public static final RegistryObject<Item> NANA_DEPLOYER = ITEMS.register("nana_deployer",
             () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_NANA, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static void register(IEventBus eventBus) {

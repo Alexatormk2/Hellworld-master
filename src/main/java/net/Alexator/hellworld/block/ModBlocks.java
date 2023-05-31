@@ -1,13 +1,11 @@
 package net.Alexator.hellworld.block;
 
 import net.Alexator.hellworld.Hellworld;
-import net.Alexator.hellworld.block.custom.HealingBlock;
-import net.Alexator.hellworld.block.custom.ModFlammableRotatedPillarBlock;
-import net.Alexator.hellworld.block.custom.RiceCropBlock;
-import net.Alexator.hellworld.block.custom.SakuritaLampBlock;
+import net.Alexator.hellworld.block.custom.*;
 import net.Alexator.hellworld.item.ModCreativeModeTab;
 import net.Alexator.hellworld.item.ModItems;
 import net.Alexator.hellworld.world.feature.SakuraTreeGrower;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -57,6 +55,8 @@ public class ModBlocks {
                     UniformInt.of(3, 7)), ModCreativeModeTab.HELLWORD_TAB_BLOCK);
 
     //especiales
+
+
     public static final RegistryObject<Block> HEALING_BLOCK = registerBlock("healing_block",
             () -> new HealingBlock(BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(3f)), ModCreativeModeTab.HELLWORD_TAB_BLOCK);
 
