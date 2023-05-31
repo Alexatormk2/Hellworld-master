@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hellworld:block/blackmarket"
+    },
+    "facing=south": {
+      "model": "hellworld:block/blackmarket",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hellworld:block/blackmarket",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "hellworld:block/blackmarket",
+      "y": 90
+    }
+  }
+}

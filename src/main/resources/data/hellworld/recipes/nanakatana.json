@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:diamond_sword"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "hellworld:sakurita"
+    }
+  ],
+  "result": {
+    "item": "hellworld:nanakatana"
+  }
+}

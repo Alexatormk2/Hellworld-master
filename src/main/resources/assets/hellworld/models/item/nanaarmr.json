@@ -7,10 +7,24 @@
 	},
 	"elements": [
 		{
-			"name": "armrsup",
-			"from": [3.4, 4.4, 5.7],
-			"to": [4.6, 8.1, 7.2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3.75, 4.3, 6.5375]},
+			"name": "armlarmor",
+			"from": [8, 4.25, 7.45],
+			"to": [9, 7.25, 9.45],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 6.25, -0.55]},
+			"faces": {
+				"north": {"uv": [14, 7, 14.5, 8.5], "texture": "#0"},
+				"east": {"uv": [13, 7, 14, 8.5], "texture": "#0"},
+				"south": {"uv": [15.5, 7, 16, 8.5], "texture": "#0"},
+				"west": {"uv": [14.5, 7, 15.5, 8.5], "texture": "#0"},
+				"up": {"uv": [14.5, 7, 14, 6], "texture": "#0"},
+				"down": {"uv": [15, 6, 14.5, 7], "texture": "#0"}
+			}
+		},
+		{
+			"name": "armlsup",
+			"from": [7.4, 3.4, 7.7],
+			"to": [8.6, 7.1, 9.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 6.5, -0.5]},
 			"faces": {
 				"north": {"uv": [14.5, 0.5, 15, 2], "texture": "#0"},
 				"east": {"uv": [14, 0.5, 14.5, 2], "texture": "#0"},
@@ -21,10 +35,24 @@
 			}
 		},
 		{
-			"name": "armsub1",
-			"from": [3.4, 0.4, 5.7],
-			"to": [4.6, 4.1, 7.2],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3.75, 4.3, 6.5375]},
+			"name": "armlmid",
+			"from": [7.8, 2.4, 7.9],
+			"to": [8.35, 4.1, 9.35],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.075, 3.25, -0.375]},
+			"faces": {
+				"north": {"uv": [15.5, 2, 15.5, 2.5], "texture": "#0"},
+				"east": {"uv": [15, 2, 15.5, 2.5], "texture": "#0"},
+				"south": {"uv": [16, 2, 16, 2.5], "texture": "#0"},
+				"west": {"uv": [15.5, 2, 16, 2.5], "texture": "#0"},
+				"up": {"uv": [15.5, 2, 15.5, 1.5], "texture": "#0"},
+				"down": {"uv": [15.5, 1.5, 15.5, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "armlsub1",
+			"from": [7.4, -0.6, 7.7],
+			"to": [8.6, 3.1, 9.2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 1.75, -0.5]},
 			"faces": {
 				"north": {"uv": [14.5, 3, 15, 4.5], "texture": "#0"},
 				"east": {"uv": [14, 3, 14.5, 4.5], "texture": "#0"},
@@ -36,9 +64,9 @@
 		},
 		{
 			"name": "armbrazalete",
-			"from": [3.25, 0.875, 5.5],
-			"to": [4.75, 2.875, 7.4],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3.75, 4.3, 6.5375]},
+			"from": [7.25, -0.125, 7.5],
+			"to": [8.75, 1.875, 9.4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.25, 5.875, -0.5]},
 			"faces": {
 				"north": {"uv": [14.5, 5, 15, 6], "texture": "#0"},
 				"east": {"uv": [14, 5, 14.5, 6], "texture": "#0"},
@@ -47,84 +75,54 @@
 				"up": {"uv": [15, 5, 14.5, 4.5], "texture": "#0"},
 				"down": {"uv": [15.5, 4.5, 15, 5], "texture": "#0"}
 			}
-		},
-		{
-			"name": "armrmid",
-			"from": [3.6, 3.4, 5.9],
-			"to": [4.15, 5.1, 7.35],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3.75, 4.3, 6.5375]},
-			"faces": {
-				"north": {"uv": [15.5, 2, 15.5, 2.5], "texture": "#0"},
-				"east": {"uv": [15, 2, 15.5, 2.5], "texture": "#0"},
-				"south": {"uv": [16, 2, 16, 2.5], "texture": "#0"},
-				"west": {"uv": [15.5, 2, 16, 2.5], "texture": "#0"},
-				"up": {"uv": [15.5, 2, 15.5, 1.5], "texture": "#0"},
-				"down": {"uv": [15.5, 1.5, 15.5, 2], "texture": "#0"}
-			}
-		},
-		{
-			"name": "armrarmor",
-			"from": [3, 5.225, 5.5],
-			"to": [4, 8.225, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [3.75, 4.3, 6.5375]},
-			"faces": {
-				"north": {"uv": [14, 7, 14.5, 8.5], "texture": "#0"},
-				"east": {"uv": [13, 7, 14, 8.5], "texture": "#0"},
-				"south": {"uv": [15.5, 7, 16, 8.5], "texture": "#0"},
-				"west": {"uv": [14.5, 7, 15.5, 8.5], "texture": "#0"},
-				"up": {"uv": [14.5, 7, 14, 6], "texture": "#0"},
-				"down": {"uv": [15, 6, 14.5, 7], "texture": "#0"}
-			}
 		}
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [5.25, 4.25, 0.75]
+			"translation": [0, 4.75, -1.25]
 		},
 		"thirdperson_lefthand": {
-			"translation": [-3.75, 4.25, 0.75]
+			"translation": [0, 4.5, -1.25]
 		},
 		"firstperson_righthand": {
-			"translation": [4, 5, 4]
+			"translation": [0, 7.5, 0]
 		},
 		"firstperson_lefthand": {
-			"translation": [-7.5, 5.75, 5.75]
+			"translation": [0, 7, 0]
 		},
 		"ground": {
-			"translation": [0, 3.75, 0]
+			"translation": [0, 3.25, 0]
 		},
 		"gui": {
-			"translation": [5, 6.5, 0],
-			"scale": [1.9, 1.87, 1.83]
+			"translation": [0, 9.75, 0],
+			"scale": [2.05, 2.05, 2.05]
 		},
 		"fixed": {
-			"translation": [9.75, 9, 0],
-			"scale": [2.32, 2.07, 2.05]
+			"translation": [0, 11, 0],
+			"scale": [2.3, 2.25, 2.21]
 		}
 	},
 	"groups": [
 		{
-			"name": "armr",
-			"origin": [-1.75, 5.875, -0.5],
-			"rotation": [-0.29341, 1.34913, -7.37546],
+			"name": "arml",
+			"origin": [1, 6.25, -0.55],
+			"rotation": [-1.77029, 2.89739, 0.96411],
 			"color": 0,
 			"children": [
 				0,
+				1,
 				{
-					"name": "armrsub",
-					"origin": [-1.75, 2.875, -0.5],
+					"name": "armlsub2",
+					"origin": [0.875, 3.25, -0.5],
 					"color": 0,
-					"children": [
-						{
-							"name": "armsub2",
-							"origin": [-2, 3.0625, -0.55],
-							"color": 0,
-							"children": [1, 2]
-						},
-						3
-					]
+					"children": [2]
 				},
-				4
+				{
+					"name": "armslub3",
+					"origin": [1, 1.75, -0.5],
+					"color": 0,
+					"children": [3, 4]
+				}
 			]
 		}
 	]

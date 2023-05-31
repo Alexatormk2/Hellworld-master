@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "hellworld:sakurita"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+
+  ],
+  "result": {
+    "item": "hellworld:nanabody"
+  }
+}

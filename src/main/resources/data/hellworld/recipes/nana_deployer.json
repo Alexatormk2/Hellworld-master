@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "hellworld:nanabody"
+    },
+    "J": {
+      "item": "hellworld:nanaleg"
+    },
+    "D": {
+      "item": "hellworld:nanakatana"
+    },
+    "H": {
+      "item": "hellworld:nanapelvis"
+    },
+    "K": {
+      "item": "hellworld:nanahead"
+    },
+    "L": {
+      "item": "hellworld:nanaarml"
+    },
+    "W": {
+      "item": "hellworld:nanaarmr"
+    },
+    "B": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "DKB",
+    "L#W",
+    "JHJ"
+  ],
+  "result": {
+    "item": "hellworld:nana_deployer"
+  }
+}

@@ -5,8 +5,6 @@ import net.Alexator.hellworld.block.custom.*;
 import net.Alexator.hellworld.item.ModCreativeModeTab;
 import net.Alexator.hellworld.item.ModItems;
 import net.Alexator.hellworld.world.feature.SakuraTreeGrower;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -32,8 +30,6 @@ public class ModBlocks {
 
     //sakurita ores
 
-
-
     public static final RegistryObject<Block> SAKURITA_ORE = registerBlock("sakurita_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
@@ -56,6 +52,8 @@ public class ModBlocks {
 
     //especiales
 
+    public static final RegistryObject<Block> BLACKMARKET_BLOCK = registerBlock("blackmarket",
+            () -> new Blackmarketblock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3f).noOcclusion()), ModCreativeModeTab.HELLWORD_TAB_BLOCK);
 
     public static final RegistryObject<Block> HEALING_BLOCK = registerBlock("healing_block",
             () -> new HealingBlock(BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(3f)), ModCreativeModeTab.HELLWORD_TAB_BLOCK);

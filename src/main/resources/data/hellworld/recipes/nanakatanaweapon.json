@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "hellworld:sakurita"
+    },
+    {
+      "item": "hellworld:nanakatana"
+    }
+  ],
+  "result": {
+    "item": "hellworld:nanakatanaweapon"
+  }
+}
