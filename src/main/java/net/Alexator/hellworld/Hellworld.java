@@ -7,6 +7,7 @@ import net.Alexator.hellworld.entity.client.DummyRenderer;
 import net.Alexator.hellworld.entity.client.LilServantRenderer;
 import net.Alexator.hellworld.entity.client.NanaRenderer;
 import net.Alexator.hellworld.item.ModItems;
+import net.Alexator.hellworld.villager.ModVillager;
 import net.Alexator.hellworld.world.feature.ModConfiguredFeatures;
 import net.Alexator.hellworld.world.feature.ModPlacedFeatures;
 import net.minecraft.client.Minecraft;
@@ -40,7 +41,7 @@ public class Hellworld {
         ModPlacedFeatures.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         ModEntityTypes.register(modEventBus);
-
+        ModVillager.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         GeckoLib.initialize();
 
@@ -49,6 +50,9 @@ public class Hellworld {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
+        event.enqueueWork(()->{
+        ModVillager.registerPOIs();
+        });
 
     }
 

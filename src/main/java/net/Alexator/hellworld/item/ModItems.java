@@ -64,6 +64,14 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(64)));
     public static final RegistryObject<Item> ICON = ITEMS.register("icon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+
+    public static final RegistryObject<Item> SAKUCOIN = ITEMS.register("sakucoin",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM).stacksTo(64)));
+
+
+
+
     //bots parts
     public static final RegistryObject<Item> NANA_HEAD = ITEMS.register("nanahead",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));

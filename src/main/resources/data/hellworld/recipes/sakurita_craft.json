@@ -5,14 +5,17 @@
     "a": {
       "item": "minecraft:iron_ingot"
     },
+    "D": {
+      "item": "minecraft:gold_ingot"
+    },
     "#": {
       "item": "hellworld:sakura_flower"
     }
   },
   "pattern": [
-     "#",
+    " D ",
     "#a#",
-     "#"
+    " D "
   ],
   "result": {
     "count": 1,

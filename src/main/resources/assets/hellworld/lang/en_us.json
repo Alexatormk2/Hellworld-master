@@ -42,9 +42,14 @@
   "block.hellworld.sakurita_ore": "Sakurita ore",
   "block.hellworld.nether_sakurita_ore": "Nether sakurita ore",
   "block.hellworld.end_sakurita_ore": "End sakurita ore",
-  "block.hellworld.deepslate_sakurita_ore": "deepslate sakurita ore",
+  "block.hellworld.deepslate_sakurita_ore": "Deepslate sakurita ore",
 
+
+  "entity.minecraft.villager.hellworld.blackmarket_cultist": "BlackMarket Cultist",
   "entity.hellworld.nana": "Nana",
+
+
+
   "itemGroup.hellworld_items": "Hellworld:Items",
   "itemGroup.hellworld_blocks": "Hellworld:Blocks",
   "itemGroup.hellworld_tools": "Hellworld:Tools",
