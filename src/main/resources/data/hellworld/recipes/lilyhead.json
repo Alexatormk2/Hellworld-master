@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lily",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "hellworld:sakurita"
+    }
+
+  ],
+  "result": {
+    "item": "hellworld:lilyhead"
+  }
+}

@@ -1,7 +1,6 @@
 package net.Alexator.hellworld.entity.robots;
 
 import net.minecraft.core.BlockPos;
-
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -19,7 +18,8 @@ import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
-import net.minecraft.world.entity.ai.goal.target.*;
+import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -43,10 +43,10 @@ import software.bernie.geckolib3.util.GeckoLibUtil;
 
 import java.util.function.Predicate;
 
-public class NanaEntity extends TamableAnimal implements IAnimatable {
+public class LilyEntity extends TamableAnimal implements IAnimatable {
 
-    private static final EntityDataAccessor<Boolean> SITTING = SynchedEntityData.defineId(NanaEntity.class, EntityDataSerializers.BOOLEAN);
-   public  NanaEntity(EntityType<? extends TamableAnimal> entityType, Level level) {
+    private static final EntityDataAccessor<Boolean> SITTING = SynchedEntityData.defineId(LilyEntity.class, EntityDataSerializers.BOOLEAN);
+   public LilyEntity(EntityType<? extends TamableAnimal> entityType, Level level) {
         super(entityType, level);
     }
     public static final Predicate<LivingEntity> PREY_SELECTOR = (type) -> {
@@ -59,14 +59,14 @@ public class NanaEntity extends TamableAnimal implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.servant_nana.walk", ILoopType.EDefaultLoopTypes.LOOP));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.lily.walk", ILoopType.EDefaultLoopTypes.LOOP));
             return PlayState.CONTINUE;
         }
         if (this.isSitting()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.servant_nana.sitting",ILoopType.EDefaultLoopTypes.LOOP));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.lily.sitting",ILoopType.EDefaultLoopTypes.LOOP));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.servant_nana.idle", ILoopType.EDefaultLoopTypes.LOOP));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.lily.idle", ILoopType.EDefaultLoopTypes.LOOP));
         return PlayState.CONTINUE;
     }
     protected void playStepSound(BlockPos pos, BlockState blockIn) {
@@ -140,7 +140,7 @@ public class NanaEntity extends TamableAnimal implements IAnimatable {
 
         if(this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
             event.getController().markNeedsReload();
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.servant_nana.attacking",ILoopType.EDefaultLoopTypes.PLAY_ONCE));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.lily.attacking",ILoopType.EDefaultLoopTypes.PLAY_ONCE));
             this.swinging = false;
         }
         return PlayState.CONTINUE;

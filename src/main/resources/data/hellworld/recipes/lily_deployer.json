@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "hellworld:lilybody"
+    },
+    "J": {
+      "item": "hellworld:lilylegr"
+    },
+    "A": {
+      "item": "hellworld:lilylegl"
+    },
+    "D": {
+      "item": "hellworld:energonaxe"
+    },
+    "H": {
+      "item": "hellworld:lilypelvis"
+    },
+    "K": {
+      "item": "hellworld:lilyhead"
+    },
+    "L": {
+      "item": "hellworld:lilyarml"
+    },
+    "W": {
+      "item": "hellworld:lilyarmr"
+    },
+    "B": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "DKB",
+    "L#W",
+    "AHJ"
+  ],
+  "result": {
+    "item": "hellworld:lily_deployer"
+  }
+}

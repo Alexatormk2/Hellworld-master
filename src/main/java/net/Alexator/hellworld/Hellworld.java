@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.Alexator.hellworld.block.ModBlocks;
 import net.Alexator.hellworld.entity.ModEntityTypes;
 import net.Alexator.hellworld.entity.client.DummyRenderer;
-import net.Alexator.hellworld.entity.client.LilServantRenderer;
+import net.Alexator.hellworld.entity.client.LilyRenderer;
 import net.Alexator.hellworld.entity.client.NanaRenderer;
 import net.Alexator.hellworld.item.ModItems;
 import net.Alexator.hellworld.villager.ModVillager;
@@ -65,7 +65,7 @@ public class Hellworld {
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
             EntityRenderers.register(ModEntityTypes.DUMMY.get(), DummyRenderer::new);
-                EntityRenderers.register(ModEntityTypes.LILSERVANT_LILY.get(), LilServantRenderer::new);
+                EntityRenderers.register(ModEntityTypes.SERVANT_LILY.get(), LilyRenderer::new);
                 EntityRenderers.register(ModEntityTypes.SERVANT_NANA.get(), NanaRenderer::new);
 
         }

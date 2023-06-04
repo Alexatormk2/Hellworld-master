@@ -92,7 +92,7 @@ public class ModEvents {
                 int villagerLevel = 4;
 
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                        new ItemStack(ModItems.SAKUCOIN.get(),1),
+                        new ItemStack(ModItems.SAKUCOIN.get(),4),
                         stack,5,8,0.02F));
             }
             if(event.getType() == ModVillager.BLACKMARKET_CULTIST.get()) {
@@ -111,9 +111,21 @@ public class ModEvents {
                 int villagerLevel = 5;
 
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                        new ItemStack(ModItems.SAKUCOIN.get(),1),
-                        stack,4,8,0.02F));
+                        new ItemStack(ModItems.SAKUCOIN.get(),12),
+                        stack,4,8,0));
             }
+
+            if(event.getType() == ModVillager.BLACKMARKET_CULTIST.get()) {
+                Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+                ItemStack stack = new ItemStack(Items.SHULKER_SHELL ,1);
+                int villagerLevel = 5;
+
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(ModItems.SAKUCOIN.get(),10),
+                        stack,4,8,0));
+            }
+
+
 
         }
     }
@@ -124,7 +136,7 @@ public class ModEvents {
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
             event.put(ModEntityTypes.DUMMY.get(), DummyEntity.setAttributes());
-            event.put(ModEntityTypes.LILSERVANT_LILY.get(), LilServantEntity.setAttributes());
+            event.put(ModEntityTypes.SERVANT_LILY.get(), LilServantEntity.setAttributes());
             event.put(ModEntityTypes.SERVANT_NANA.get(), NanaEntity.setAttributes());
     }
 

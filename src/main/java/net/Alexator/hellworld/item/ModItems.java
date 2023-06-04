@@ -49,8 +49,8 @@ public class ModItems {
     public static final RegistryObject<SwordItem> SAKURITA_KATANA = ITEMS.register("sakurita_katana",
             () -> new SwordItem(ToolTiers.SAKURITA, 2, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
 
-    public static final RegistryObject<SwordItem> NANA_KATANA_WEAPON = ITEMS.register("nanakatanaweapon",
-            () -> new SwordItem(ToolTiers.SAKURITA, 4, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
+    public static final RegistryObject<SwordItem> ENERGON_AXE = ITEMS.register("energon_axe",
+            () -> new SwordItem(ToolTiers.SAKURITA, 5, 1.5f, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_WEAPONS).stacksTo(1)));
 
 
     //items
@@ -73,6 +73,7 @@ public class ModItems {
 
 
     //bots parts
+    //nana
     public static final RegistryObject<Item> NANA_HEAD = ITEMS.register("nanahead",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
 
@@ -93,6 +94,24 @@ public class ModItems {
     public static final RegistryObject<Item> NANA_KATANA = ITEMS.register("nanakatana",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
 
+    public static final RegistryObject<Item> ENERGONAXE = ITEMS.register("energonaxe",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+
+    //lily
+    public static final RegistryObject<Item> LILY_HEAD = ITEMS.register("lilyhead",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> LILY_PELVIS = ITEMS.register("lilypelvis",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> LILY_LEG_R = ITEMS.register("lilylegr",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> LILY_LEG_L = ITEMS.register("lilylegl",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> LILY_BODY = ITEMS.register("lilybody",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> LILY_ARMR = ITEMS.register("lilyarmr",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
+    public static final RegistryObject<Item> LILY_ARML = ITEMS.register("lilyarml",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ITEM)));
 
 
     //spaw eggs
@@ -100,12 +119,15 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.DUMMY, 0xf2c12b, 0x000000, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static final RegistryObject<Item> LILY_SPAWN_EGG = ITEMS.register("lily_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntityTypes.LILSERVANT_LILY, 0xbf1111, 0x38761d, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_LILY, 0xf44336, 0x11fdd4, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static final RegistryObject<Item> NANA_SPAWN_EGG = ITEMS.register("nana_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_NANA, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
     public static final RegistryObject<Item> NANA_DEPLOYER = ITEMS.register("nana_deployer",
             () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_NANA, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
+
+    public static final RegistryObject<Item> LILY_DEPLOYER = ITEMS.register("lily_deployer",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_LILY, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static void register(IEventBus eventBus) {
 
