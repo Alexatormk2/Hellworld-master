@@ -4,11 +4,10 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.Alexator.hellworld.Hellworld;
 import net.Alexator.hellworld.entity.ModEntityTypes;
 import net.Alexator.hellworld.entity.custom.DummyEntity;
-import net.Alexator.hellworld.entity.custom.LilServantEntity;
+import net.Alexator.hellworld.entity.robots.LilyEntity;
 import net.Alexator.hellworld.entity.robots.NanaEntity;
 import net.Alexator.hellworld.item.ModItems;
 import net.Alexator.hellworld.villager.ModVillager;
-import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -136,7 +135,7 @@ public class ModEvents {
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
             event.put(ModEntityTypes.DUMMY.get(), DummyEntity.setAttributes());
-            event.put(ModEntityTypes.SERVANT_LILY.get(), LilServantEntity.setAttributes());
+            event.put(ModEntityTypes.SERVANT_LILY.get(), LilyEntity.setAttributes());
             event.put(ModEntityTypes.SERVANT_NANA.get(), NanaEntity.setAttributes());
     }
 

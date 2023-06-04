@@ -2,7 +2,6 @@ package net.Alexator.hellworld.entity;
 
 import net.Alexator.hellworld.Hellworld;
 import net.Alexator.hellworld.entity.custom.DummyEntity;
-import net.Alexator.hellworld.entity.custom.LilServantEntity;
 import net.Alexator.hellworld.entity.robots.LilyEntity;
 import net.Alexator.hellworld.entity.robots.NanaEntity;
 import net.minecraft.resources.ResourceLocation;
@@ -26,7 +25,7 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<LilyEntity>> SERVANT_LILY =
             ENTITY_TYPES.register("lily",
-                    ()-> EntityType.Builder.of(LilyEntity::new, MobCategory.CREATURE).sized(0.4f,1.6f).build(new ResourceLocation(Hellworld.MOD_ID,"lily").toString()));
+                    ()-> EntityType.Builder.of(LilyEntity::new, MobCategory.CREATURE).sized(0.6f,2.1f).build(new ResourceLocation(Hellworld.MOD_ID,"lily").toString()));
 
     //bots
     public static final RegistryObject<EntityType<NanaEntity>> SERVANT_NANA =

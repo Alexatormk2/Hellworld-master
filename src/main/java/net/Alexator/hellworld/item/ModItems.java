@@ -127,7 +127,7 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_NANA, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static final RegistryObject<Item> LILY_DEPLOYER = ITEMS.register("lily_deployer",
-            () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_LILY, 0x000000, 0xef49a0, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
+            () -> new ForgeSpawnEggItem(ModEntityTypes.SERVANT_LILY, 0xf44336, 0x11fdd4, new Item.Properties().tab(ModCreativeModeTab.HELLWORD_TAB_ENTITYS)));
 
     public static void register(IEventBus eventBus) {
 
